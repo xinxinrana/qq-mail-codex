@@ -1,0 +1,28 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "author": {
+    "email": "xingranna@gmail.com",
+    "name": "熊"
+  },
+  "description": "Codex 的第三方邮件应用，可指定读取邮件、管理本地分组与提醒。",
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "capabilities": [
+          "Interactive"
+        ],
+        "category": "Productivity",
+        "composerIcon": "./assets/mail.svg",
+        "defaultPrompt": "看看 QQ 邮箱监听状态和各组的新邮件。",
+        "developerName": "熊",
+        "displayName": "QQ 邮箱",
+        "logo": "./assets/mail.svg",
+        "longDescription": "非腾讯官方客户端。用 Codex 按引用指定读取邮件或分组，并管理本地收录、分类规则和桌面提醒。目前通过 IMAP 只读接入 QQ 邮箱和 Foxmail；其他支持 IMAP 的邮箱是后续扩展方向。",
+        "shortDescription": "第三方 IMAP 邮件应用"
+      },
+      "requires_local_executor": true
+    }
+  },
+  "name": "qq-mail-watch",
+  "version": "1.7.6"
+}
